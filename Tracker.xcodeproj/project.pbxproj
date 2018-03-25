@@ -44,6 +44,7 @@
 		F22F872C2059E06E00004AEE /* TrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F22F87302059E06E00004AEE /* TrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackerTests.swift; sourceTree = "<group>"; };
 		F22F87322059E06E00004AEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F2EECEB620676FC7003CE7F1 /* Tracker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Tracker.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +101,7 @@
 		F22F871A2059E06E00004AEE /* Tracker */ = {
 			isa = PBXGroup;
 			children = (
+				F2EECEB620676FC7003CE7F1 /* Tracker.entitlements */,
 				F22F871B2059E06E00004AEE /* AppDelegate.swift */,
 				F22F871D2059E06E00004AEE /* ViewController.swift */,
 				F22F871F2059E06E00004AEE /* Main.storyboard */,
@@ -185,6 +187,14 @@
 					F22F87172059E06E00004AEE = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+							com.apple.Siri = {
+								enabled = 1;
+							};
+						};
 					};
 					F22F872B2059E06E00004AEE = {
 						CreatedOnToolsVersion = 9.2;
@@ -491,6 +501,7 @@
 			baseConfigurationReference = 3C7DAACA470D1B527D4E6C5E /* Pods-Tracker.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Tracker/Tracker.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2Z7D9THFQV;
@@ -509,6 +520,7 @@
 			baseConfigurationReference = 4AB4A53B61225117E3E2A6A7 /* Pods-Tracker.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Tracker/Tracker.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2Z7D9THFQV;
