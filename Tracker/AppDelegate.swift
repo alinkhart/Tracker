@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import AppCenter
+import AppCenterPush
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -18,6 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
     
         var appCenterSecret = Bundle.main.infoDictionary?["APP_CENTER_SECRET"] as? String
+        MSAppCenter.start(appCenterSecret, withServices: [MSPush.self])
         
         return true
     }
