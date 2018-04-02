@@ -15,6 +15,7 @@
 		F22F87232059E06E00004AEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F22F87222059E06E00004AEE /* Assets.xcassets */; };
 		F22F87262059E06E00004AEE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F22F87242059E06E00004AEE /* LaunchScreen.storyboard */; };
 		F22F87312059E06E00004AEE /* TrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22F87302059E06E00004AEE /* TrackerTests.swift */; };
+		F2DFD9A62071B0A700868167 /* Config.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = F2DFD9A52071B0A700868167 /* Config.xcconfig */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		F22F872C2059E06E00004AEE /* TrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F22F87302059E06E00004AEE /* TrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackerTests.swift; sourceTree = "<group>"; };
 		F22F87322059E06E00004AEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F2DFD9A52071B0A700868167 /* Config.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = SOURCE_ROOT; };
 		F2EECEB620676FC7003CE7F1 /* Tracker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Tracker.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -101,6 +103,7 @@
 		F22F871A2059E06E00004AEE /* Tracker */ = {
 			isa = PBXGroup;
 			children = (
+				F2DFD9A52071B0A700868167 /* Config.xcconfig */,
 				F2EECEB620676FC7003CE7F1 /* Tracker.entitlements */,
 				F22F871B2059E06E00004AEE /* AppDelegate.swift */,
 				F22F871D2059E06E00004AEE /* ViewController.swift */,
@@ -227,6 +230,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2DFD9A62071B0A700868167 /* Config.xcconfig in Resources */,
 				F22F87262059E06E00004AEE /* LaunchScreen.storyboard in Resources */,
 				F22F87232059E06E00004AEE /* Assets.xcassets in Resources */,
 				F22F87212059E06E00004AEE /* Main.storyboard in Resources */,
@@ -391,6 +395,7 @@
 /* Begin XCBuildConfiguration section */
 		F22F87332059E06E00004AEE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2DFD9A52071B0A700868167 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -448,6 +453,7 @@
 		};
 		F22F87342059E06E00004AEE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2DFD9A52071B0A700868167 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
