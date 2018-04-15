@@ -15,6 +15,11 @@
 		F22F87232059E06E00004AEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F22F87222059E06E00004AEE /* Assets.xcassets */; };
 		F22F87262059E06E00004AEE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F22F87242059E06E00004AEE /* LaunchScreen.storyboard */; };
 		F22F87312059E06E00004AEE /* TrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22F87302059E06E00004AEE /* TrackerTests.swift */; };
+		F2B0C0E32083EE5100F57CBC /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2B0C0E22083EE5100F57CBC /* Login.storyboard */; };
+		F2B0C0E52083EE5D00F57CBC /* Passcode.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2B0C0E42083EE5D00F57CBC /* Passcode.storyboard */; };
+		F2B0C0E72083EE6800F57CBC /* Tabs.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2B0C0E62083EE6800F57CBC /* Tabs.storyboard */; };
+		F2B0C0E92083EEA800F57CBC /* Tracks.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2B0C0E82083EEA800F57CBC /* Tracks.storyboard */; };
+		F2B0C0EB2083EEB600F57CBC /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2B0C0EA2083EEB600F57CBC /* Settings.storyboard */; };
 		F2DFD9A62071B0A700868167 /* Config.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = F2DFD9A52071B0A700868167 /* Config.xcconfig */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +50,11 @@
 		F22F872C2059E06E00004AEE /* TrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F22F87302059E06E00004AEE /* TrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackerTests.swift; sourceTree = "<group>"; };
 		F22F87322059E06E00004AEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F2B0C0E22083EE5100F57CBC /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		F2B0C0E42083EE5D00F57CBC /* Passcode.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Passcode.storyboard; sourceTree = "<group>"; };
+		F2B0C0E62083EE6800F57CBC /* Tabs.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Tabs.storyboard; sourceTree = "<group>"; };
+		F2B0C0E82083EEA800F57CBC /* Tracks.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Tracks.storyboard; sourceTree = "<group>"; };
+		F2B0C0EA2083EEB600F57CBC /* Settings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
 		F2DFD9A52071B0A700868167 /* Config.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = SOURCE_ROOT; };
 		F2EECEB620676FC7003CE7F1 /* Tracker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Tracker.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -132,6 +142,7 @@
 		F2B0C0DB2083E72E00F57CBC /* Settings */ = {
 			isa = PBXGroup;
 			children = (
+				F2B0C0EA2083EEB600F57CBC /* Settings.storyboard */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -139,6 +150,7 @@
 		F2B0C0DC2083E75C00F57CBC /* Tracks */ = {
 			isa = PBXGroup;
 			children = (
+				F2B0C0E82083EEA800F57CBC /* Tracks.storyboard */,
 			);
 			path = Tracks;
 			sourceTree = "<group>";
@@ -146,6 +158,7 @@
 		F2B0C0DD2083E7C300F57CBC /* Tabs */ = {
 			isa = PBXGroup;
 			children = (
+				F2B0C0E62083EE6800F57CBC /* Tabs.storyboard */,
 			);
 			path = Tabs;
 			sourceTree = "<group>";
@@ -153,6 +166,7 @@
 		F2B0C0DE2083E7D600F57CBC /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				F2B0C0E22083EE5100F57CBC /* Login.storyboard */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -160,6 +174,7 @@
 		F2B0C0DF2083E84000F57CBC /* Passcode */ = {
 			isa = PBXGroup;
 			children = (
+				F2B0C0E42083EE5D00F57CBC /* Passcode.storyboard */,
 			);
 			path = Passcode;
 			sourceTree = "<group>";
@@ -270,9 +285,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2B0C0E92083EEA800F57CBC /* Tracks.storyboard in Resources */,
 				F2DFD9A62071B0A700868167 /* Config.xcconfig in Resources */,
 				F22F87262059E06E00004AEE /* LaunchScreen.storyboard in Resources */,
+				F2B0C0E72083EE6800F57CBC /* Tabs.storyboard in Resources */,
 				F22F87232059E06E00004AEE /* Assets.xcassets in Resources */,
+				F2B0C0E32083EE5100F57CBC /* Login.storyboard in Resources */,
+				F2B0C0EB2083EEB600F57CBC /* Settings.storyboard in Resources */,
+				F2B0C0E52083EE5D00F57CBC /* Passcode.storyboard in Resources */,
 				F22F87212059E06E00004AEE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
