@@ -512,6 +512,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2Z7D9THFQV;
 				INFOPLIST_FILE = Tracker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.adamlinkhart.Tracker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -531,6 +532,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2Z7D9THFQV;
 				INFOPLIST_FILE = Tracker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.adamlinkhart.Tracker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
