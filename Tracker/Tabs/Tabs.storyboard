@@ -1,7 +1,51 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13142" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="QSx-Bn-wUp">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12042"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <scenes/>
+    <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="6jP-Lz-r37">
+            <objects>
+                <tabBarController storyboardIdentifier="RootTabViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="QSx-Bn-wUp" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Ur6-ji-l3F">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="WBn-2P-7gL" kind="relationship" relationship="viewControllers" id="G1z-Ao-3IZ"/>
+                        <segue destination="Uji-ne-tyM" kind="relationship" relationship="viewControllers" id="kHD-Ps-SJ5"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bOM-02-3Gf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-511" y="-76"/>
+        </scene>
+        <!--Tracks-->
+        <scene sceneID="eaF-oN-jOW">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Tracks" id="WBn-2P-7gL" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Tracks" id="1JZ-NF-YqN"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LEx-Vo-dhT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-753" y="379"/>
+        </scene>
+        <!--Settings-->
+        <scene sceneID="fbZ-YU-saB">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Settings" id="Uji-ne-tyM" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Settings" id="Z7K-p1-ow7"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="me5-fb-v5r" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-278" y="379"/>
+        </scene>
+    </scenes>
 </document>

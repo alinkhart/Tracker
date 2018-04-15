@@ -11,7 +11,6 @@
 		520D505B954EF02C2CC31E37 /* Pods_Tracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2566A1DB75D0C6AED4419951 /* Pods_Tracker.framework */; };
 		F22F871C2059E06E00004AEE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22F871B2059E06E00004AEE /* AppDelegate.swift */; };
 		F22F871E2059E06E00004AEE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22F871D2059E06E00004AEE /* ViewController.swift */; };
-		F22F87212059E06E00004AEE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F22F871F2059E06E00004AEE /* Main.storyboard */; };
 		F22F87232059E06E00004AEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F22F87222059E06E00004AEE /* Assets.xcassets */; };
 		F22F87262059E06E00004AEE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F22F87242059E06E00004AEE /* LaunchScreen.storyboard */; };
 		F22F87312059E06E00004AEE /* TrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22F87302059E06E00004AEE /* TrackerTests.swift */; };
@@ -20,6 +19,17 @@
 		F2B0C0E72083EE6800F57CBC /* Tabs.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2B0C0E62083EE6800F57CBC /* Tabs.storyboard */; };
 		F2B0C0E92083EEA800F57CBC /* Tracks.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2B0C0E82083EEA800F57CBC /* Tracks.storyboard */; };
 		F2B0C0EB2083EEB600F57CBC /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2B0C0EA2083EEB600F57CBC /* Settings.storyboard */; };
+		F2B0C0F52083F59600F57CBC /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B0C0F42083F59600F57CBC /* CreateAccountViewController.swift */; };
+		F2B0C0FB2083F68900F57CBC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B0C0FA2083F68900F57CBC /* LoginViewController.swift */; };
+		F2B0C0FD2083F6D400F57CBC /* CreatePasscodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B0C0FC2083F6D400F57CBC /* CreatePasscodeViewController.swift */; };
+		F2B0C0FF2083F6DF00F57CBC /* PasscodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B0C0FE2083F6DF00F57CBC /* PasscodeViewController.swift */; };
+		F2B0C1022083F71700F57CBC /* Welcome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2B0C1012083F71700F57CBC /* Welcome.storyboard */; };
+		F2B0C1042083F72A00F57CBC /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B0C1032083F72A00F57CBC /* WelcomeViewController.swift */; };
+		F2B0C1072083FDEE00F57CBC /* TracksTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B0C1062083FDEE00F57CBC /* TracksTableViewController.swift */; };
+		F2B0C10B2083FE0100F57CBC /* TrackDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B0C10A2083FE0100F57CBC /* TrackDetailsViewController.swift */; };
+		F2B0C10F2083FE2000F57CBC /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B0C10E2083FE2000F57CBC /* SettingsViewController.swift */; };
+		F2B0C1112083FE7100F57CBC /* CreateTrackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B0C1102083FE7100F57CBC /* CreateTrackViewController.swift */; };
+		F2B0C1132083FE7800F57CBC /* CreatePointViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B0C1122083FE7800F57CBC /* CreatePointViewController.swift */; };
 		F2DFD9A62071B0A700868167 /* Config.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = F2DFD9A52071B0A700868167 /* Config.xcconfig */; };
 /* End PBXBuildFile section */
 
@@ -43,7 +53,6 @@
 		F22F87182059E06E00004AEE /* Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F22F871B2059E06E00004AEE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F22F871D2059E06E00004AEE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F22F87202059E06E00004AEE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F22F87222059E06E00004AEE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F22F87252059E06E00004AEE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F22F87272059E06E00004AEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -55,6 +64,17 @@
 		F2B0C0E62083EE6800F57CBC /* Tabs.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Tabs.storyboard; sourceTree = "<group>"; };
 		F2B0C0E82083EEA800F57CBC /* Tracks.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Tracks.storyboard; sourceTree = "<group>"; };
 		F2B0C0EA2083EEB600F57CBC /* Settings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
+		F2B0C0F42083F59600F57CBC /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
+		F2B0C0FA2083F68900F57CBC /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		F2B0C0FC2083F6D400F57CBC /* CreatePasscodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePasscodeViewController.swift; sourceTree = "<group>"; };
+		F2B0C0FE2083F6DF00F57CBC /* PasscodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasscodeViewController.swift; sourceTree = "<group>"; };
+		F2B0C1012083F71700F57CBC /* Welcome.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Welcome.storyboard; sourceTree = "<group>"; };
+		F2B0C1032083F72A00F57CBC /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		F2B0C1062083FDEE00F57CBC /* TracksTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TracksTableViewController.swift; sourceTree = "<group>"; };
+		F2B0C10A2083FE0100F57CBC /* TrackDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackDetailsViewController.swift; sourceTree = "<group>"; };
+		F2B0C10E2083FE2000F57CBC /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		F2B0C1102083FE7100F57CBC /* CreateTrackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTrackViewController.swift; sourceTree = "<group>"; };
+		F2B0C1122083FE7800F57CBC /* CreatePointViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePointViewController.swift; sourceTree = "<group>"; };
 		F2DFD9A52071B0A700868167 /* Config.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = SOURCE_ROOT; };
 		F2EECEB620676FC7003CE7F1 /* Tracker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Tracker.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -113,6 +133,7 @@
 		F22F871A2059E06E00004AEE /* Tracker */ = {
 			isa = PBXGroup;
 			children = (
+				F2B0C1002083F6F000F57CBC /* Welcome */,
 				F2B0C0DF2083E84000F57CBC /* Passcode */,
 				F2B0C0DE2083E7D600F57CBC /* Login */,
 				F2B0C0DD2083E7C300F57CBC /* Tabs */,
@@ -122,7 +143,6 @@
 				F2EECEB620676FC7003CE7F1 /* Tracker.entitlements */,
 				F22F871B2059E06E00004AEE /* AppDelegate.swift */,
 				F22F871D2059E06E00004AEE /* ViewController.swift */,
-				F22F871F2059E06E00004AEE /* Main.storyboard */,
 				F22F87222059E06E00004AEE /* Assets.xcassets */,
 				F22F87242059E06E00004AEE /* LaunchScreen.storyboard */,
 				F22F87272059E06E00004AEE /* Info.plist */,
@@ -143,6 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				F2B0C0EA2083EEB600F57CBC /* Settings.storyboard */,
+				F2B0C10E2083FE2000F57CBC /* SettingsViewController.swift */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -151,6 +172,10 @@
 			isa = PBXGroup;
 			children = (
 				F2B0C0E82083EEA800F57CBC /* Tracks.storyboard */,
+				F2B0C1102083FE7100F57CBC /* CreateTrackViewController.swift */,
+				F2B0C1122083FE7800F57CBC /* CreatePointViewController.swift */,
+				F2B0C1062083FDEE00F57CBC /* TracksTableViewController.swift */,
+				F2B0C10A2083FE0100F57CBC /* TrackDetailsViewController.swift */,
 			);
 			path = Tracks;
 			sourceTree = "<group>";
@@ -167,6 +192,8 @@
 			isa = PBXGroup;
 			children = (
 				F2B0C0E22083EE5100F57CBC /* Login.storyboard */,
+				F2B0C0F42083F59600F57CBC /* CreateAccountViewController.swift */,
+				F2B0C0FA2083F68900F57CBC /* LoginViewController.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -175,8 +202,19 @@
 			isa = PBXGroup;
 			children = (
 				F2B0C0E42083EE5D00F57CBC /* Passcode.storyboard */,
+				F2B0C0FC2083F6D400F57CBC /* CreatePasscodeViewController.swift */,
+				F2B0C0FE2083F6DF00F57CBC /* PasscodeViewController.swift */,
 			);
 			path = Passcode;
+			sourceTree = "<group>";
+		};
+		F2B0C1002083F6F000F57CBC /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				F2B0C1012083F71700F57CBC /* Welcome.storyboard */,
+				F2B0C1032083F72A00F57CBC /* WelcomeViewController.swift */,
+			);
+			path = Welcome;
 			sourceTree = "<group>";
 		};
 		F8B2A0FCBB26B7A4FBA952ED /* Frameworks */ = {
@@ -290,10 +328,10 @@
 				F22F87262059E06E00004AEE /* LaunchScreen.storyboard in Resources */,
 				F2B0C0E72083EE6800F57CBC /* Tabs.storyboard in Resources */,
 				F22F87232059E06E00004AEE /* Assets.xcassets in Resources */,
+				F2B0C1022083F71700F57CBC /* Welcome.storyboard in Resources */,
 				F2B0C0E32083EE5100F57CBC /* Login.storyboard in Resources */,
 				F2B0C0EB2083EEB600F57CBC /* Settings.storyboard in Resources */,
 				F2B0C0E52083EE5D00F57CBC /* Passcode.storyboard in Resources */,
-				F22F87212059E06E00004AEE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -410,8 +448,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2B0C0FB2083F68900F57CBC /* LoginViewController.swift in Sources */,
+				F2B0C1072083FDEE00F57CBC /* TracksTableViewController.swift in Sources */,
+				F2B0C10B2083FE0100F57CBC /* TrackDetailsViewController.swift in Sources */,
+				F2B0C1042083F72A00F57CBC /* WelcomeViewController.swift in Sources */,
+				F2B0C0F52083F59600F57CBC /* CreateAccountViewController.swift in Sources */,
+				F2B0C0FD2083F6D400F57CBC /* CreatePasscodeViewController.swift in Sources */,
+				F2B0C0FF2083F6DF00F57CBC /* PasscodeViewController.swift in Sources */,
+				F2B0C1132083FE7800F57CBC /* CreatePointViewController.swift in Sources */,
 				F22F871E2059E06E00004AEE /* ViewController.swift in Sources */,
+				F2B0C1112083FE7100F57CBC /* CreateTrackViewController.swift in Sources */,
 				F22F871C2059E06E00004AEE /* AppDelegate.swift in Sources */,
+				F2B0C10F2083FE2000F57CBC /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,14 +482,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		F22F871F2059E06E00004AEE /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F22F87202059E06E00004AEE /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		F22F87242059E06E00004AEE /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
