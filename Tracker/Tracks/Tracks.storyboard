@@ -11,10 +11,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Tracks Table View Controller-->
+        <!--Tracks-->
         <scene sceneID="IC5-rc-Us6">
             <objects>
-                <tableViewController storyboardIdentifier="TracksTableViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Tll-zu-iKI" customClass="TracksTableViewController" customModule="Tracker" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="TracksTableViewController" title="Tracks" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Tll-zu-iKI" customClass="TracksTableViewController" customModule="Tracker" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="8YF-V1-yfD">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -37,7 +37,7 @@
                             <outlet property="delegate" destination="Tll-zu-iKI" id="odC-Vk-eT9"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="fZh-Oc-t8c">
+                    <navigationItem key="navigationItem" title="Tracks" id="fZh-Oc-t8c">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="jlE-nG-Ls8">
                             <connections>
                                 <segue destination="9Wh-kD-wyo" kind="presentation" id="6iV-hw-xhE"/>
@@ -123,10 +123,10 @@
             </objects>
             <point key="canvasLocation" x="2164" y="643"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Tracks-->
         <scene sceneID="VBw-EH-QM0">
             <objects>
-                <navigationController storyboardIdentifier="RootTracksNavigationController" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="1ae-Gw-aIc" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="RootTracksNavigationController" title="Tracks" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="1ae-Gw-aIc" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="WJi-TJ-94C">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>

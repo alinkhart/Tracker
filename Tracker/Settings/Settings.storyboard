@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Settings View Controller-->
+        <!--Settings-->
         <scene sceneID="VBU-dj-1CK">
             <objects>
                 <viewController storyboardIdentifier="SettingsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BkN-qj-pch" customClass="SettingsViewController" customModule="Tracker" customModuleProvider="target" sceneMemberID="viewController">
@@ -32,16 +32,16 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="kJy-Be-DAT"/>
                     </view>
-                    <navigationItem key="navigationItem" id="b2K-zW-CXU"/>
+                    <navigationItem key="navigationItem" title="Settings" id="b2K-zW-CXU"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XmM-1j-h7a" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1232.8" y="40.929535232383813"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Settings-->
         <scene sceneID="N7d-Il-rQu">
             <objects>
-                <navigationController storyboardIdentifier="RootSettingsNavigationController" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="076-Wc-fz9" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="RootSettingsNavigationController" title="Settings" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="076-Wc-fz9" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Fbb-TE-Fgd">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
