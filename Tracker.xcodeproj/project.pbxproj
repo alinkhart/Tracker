@@ -30,6 +30,7 @@
 		F2B0C10F2083FE2000F57CBC /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B0C10E2083FE2000F57CBC /* SettingsViewController.swift */; };
 		F2B0C1112083FE7100F57CBC /* CreateTrackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B0C1102083FE7100F57CBC /* CreateTrackViewController.swift */; };
 		F2B0C1132083FE7800F57CBC /* CreatePointViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B0C1122083FE7800F57CBC /* CreatePointViewController.swift */; };
+		F2B0C1152084041100F57CBC /* TrackTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B0C1142084041000F57CBC /* TrackTableViewCell.swift */; };
 		F2DFD9A62071B0A700868167 /* Config.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = F2DFD9A52071B0A700868167 /* Config.xcconfig */; };
 /* End PBXBuildFile section */
 
@@ -75,6 +76,7 @@
 		F2B0C10E2083FE2000F57CBC /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		F2B0C1102083FE7100F57CBC /* CreateTrackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTrackViewController.swift; sourceTree = "<group>"; };
 		F2B0C1122083FE7800F57CBC /* CreatePointViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePointViewController.swift; sourceTree = "<group>"; };
+		F2B0C1142084041000F57CBC /* TrackTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackTableViewCell.swift; sourceTree = "<group>"; };
 		F2DFD9A52071B0A700868167 /* Config.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = SOURCE_ROOT; };
 		F2EECEB620676FC7003CE7F1 /* Tracker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Tracker.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -176,6 +178,7 @@
 				F2B0C1122083FE7800F57CBC /* CreatePointViewController.swift */,
 				F2B0C1062083FDEE00F57CBC /* TracksTableViewController.swift */,
 				F2B0C10A2083FE0100F57CBC /* TrackDetailsViewController.swift */,
+				F2B0C1142084041000F57CBC /* TrackTableViewCell.swift */,
 			);
 			path = Tracks;
 			sourceTree = "<group>";
@@ -453,6 +456,7 @@
 				F2B0C10B2083FE0100F57CBC /* TrackDetailsViewController.swift in Sources */,
 				F2B0C1042083F72A00F57CBC /* WelcomeViewController.swift in Sources */,
 				F2B0C0F52083F59600F57CBC /* CreateAccountViewController.swift in Sources */,
+				F2B0C1152084041100F57CBC /* TrackTableViewCell.swift in Sources */,
 				F2B0C0FD2083F6D400F57CBC /* CreatePasscodeViewController.swift in Sources */,
 				F2B0C0FF2083F6DF00F57CBC /* PasscodeViewController.swift in Sources */,
 				F2B0C1132083FE7800F57CBC /* CreatePointViewController.swift in Sources */,

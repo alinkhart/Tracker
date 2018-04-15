@@ -10,6 +10,9 @@ import UIKit
 
 class CreatePointViewController: UIViewController {
 
+    @IBOutlet weak var CancelButton: UIButton!
+    @IBOutlet weak var CreatePointButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,7 +24,14 @@ class CreatePointViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    @IBAction func CancelButtonTapped(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
+    
+    @IBAction func CreatePointButtonTapped(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
+    
     /*
     // MARK: - Navigation
 

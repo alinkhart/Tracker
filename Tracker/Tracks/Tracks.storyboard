@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -20,15 +21,29 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="ZjP-D5-gAY">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TrackCellIdentifier" id="ZjP-D5-gAY" customClass="TrackTableViewCell" customModule="Tracker" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ZjP-D5-gAY" id="t26-yz-yYd">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Read for 30 Minutes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jwB-qy-qDP">
+                                            <rect key="frame" x="16" y="11" width="335" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="jwB-qy-qDP" firstAttribute="leading" secondItem="t26-yz-yYd" secondAttribute="leadingMargin" id="jQA-4a-hYM"/>
+                                        <constraint firstItem="jwB-qy-qDP" firstAttribute="centerY" secondItem="t26-yz-yYd" secondAttribute="centerY" id="q2e-Is-fSw"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="jwB-qy-qDP" secondAttribute="trailing" constant="8" id="u4M-lr-bEq"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="4En-N5-ABs" kind="showDetail" id="ADz-N9-XGa"/>
+                                    <outlet property="TrackTitleLabel" destination="jwB-qy-qDP" id="GbL-zO-8hI"/>
+                                    <segue destination="4En-N5-ABs" kind="show" id="ccJ-ZB-jek"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -40,6 +55,7 @@
                     <navigationItem key="navigationItem" title="Tracks" id="fZh-Oc-t8c">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="jlE-nG-Ls8">
                             <connections>
+                                <action selector="CreateTrackButtonTapped:" destination="Tll-zu-iKI" id="qOa-Yh-Jjb"/>
                                 <segue destination="9Wh-kD-wyo" kind="presentation" id="6iV-hw-xhE"/>
                             </connections>
                         </barButtonItem>
@@ -69,6 +85,9 @@
                                     <constraint firstAttribute="height" constant="50" id="usc-Uj-8pM"/>
                                 </constraints>
                                 <state key="normal" title="Cancel"/>
+                                <connections>
+                                    <action selector="CancelButtonTapped:" destination="GQe-ay-QTJ" eventType="touchUpInside" id="arf-Fi-fYr"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rY4-Dj-LCR">
                                 <rect key="frame" x="187.5" y="617" width="187.5" height="50"/>
@@ -76,6 +95,9 @@
                                     <constraint firstAttribute="height" constant="50" id="EUJ-Bd-Tw4"/>
                                 </constraints>
                                 <state key="normal" title="Create Point"/>
+                                <connections>
+                                    <action selector="CreatePointButtonTapped:" destination="GQe-ay-QTJ" eventType="touchUpInside" id="Htz-l5-c6a"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -91,6 +113,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="D19-Bt-oD4"/>
                     </view>
+                    <connections>
+                        <outlet property="CancelButton" destination="YtG-qK-2Gd" id="uuo-qJ-Wj6"/>
+                        <outlet property="CreatePointButton" destination="rY4-Dj-LCR" id="LYF-z8-xQR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dhw-9F-ffj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -161,6 +187,9 @@
                                     <constraint firstAttribute="height" constant="50" id="x4r-wA-hqD"/>
                                 </constraints>
                                 <state key="normal" title="Cancel"/>
+                                <connections>
+                                    <action selector="CancelButtonTapped:" destination="9Wh-kD-wyo" eventType="touchUpInside" id="tT4-2m-rZk"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sCX-9C-wzY">
                                 <rect key="frame" x="187.5" y="617" width="187.5" height="50"/>
@@ -168,6 +197,9 @@
                                     <constraint firstAttribute="height" constant="50" id="YQc-oS-XXV"/>
                                 </constraints>
                                 <state key="normal" title="Create Track"/>
+                                <connections>
+                                    <action selector="CreateTrackButtonTapped:" destination="9Wh-kD-wyo" eventType="touchUpInside" id="HgN-Fc-dhJ"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -183,6 +215,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Nej-tO-kA8"/>
                     </view>
+                    <connections>
+                        <outlet property="CancelButton" destination="8BS-nS-hlX" id="NGG-kb-8Uq"/>
+                        <outlet property="CreateTrackButton" destination="sCX-9C-wzY" id="c07-3V-Gh9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x0o-Hf-YHe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

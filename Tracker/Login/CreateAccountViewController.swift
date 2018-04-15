@@ -10,6 +10,9 @@ import UIKit
 
 class CreateAccountViewController: UIViewController {
 
+    @IBOutlet weak var CancelButton: UIButton!
+    @IBOutlet weak var CreateAccountButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,7 +24,13 @@ class CreateAccountViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    @IBAction func CancelButtonTapped(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
+    
+    @IBAction func CreateAccountButtonTapped(_ sender: Any) {
+    }
+    
     /*
     // MARK: - Navigation
 

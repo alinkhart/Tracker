@@ -21,7 +21,9 @@ class CreatePasscodeViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    @IBAction func CreatePasscodeButtonTapped(_ sender: Any) {
+    }
+    
     /*
     // MARK: - Navigation
 

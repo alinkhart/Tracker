@@ -32,6 +32,7 @@
                                 </constraints>
                                 <state key="normal" title="Create Account"/>
                                 <connections>
+                                    <action selector="CreateAccountButtonTapped:" destination="nYh-az-hPa" eventType="touchUpInside" id="jlw-Zl-Ipj"/>
                                     <segue destination="iDv-4b-dNt" kind="presentation" id="iBI-3z-dqA"/>
                                 </connections>
                             </button>
@@ -42,6 +43,7 @@
                                 </constraints>
                                 <state key="normal" title="Log In"/>
                                 <connections>
+                                    <action selector="LogInButtonTapped:" destination="nYh-az-hPa" eventType="touchUpInside" id="R7u-gv-voV"/>
                                     <segue destination="IPb-zx-6ZC" kind="presentation" id="Qgu-7i-xtc"/>
                                 </connections>
                             </button>
@@ -59,6 +61,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="m7b-8A-iZx"/>
                     </view>
+                    <connections>
+                        <outlet property="CreateAccountButton" destination="tKD-Zf-c6D" id="GKQ-TH-lCZ"/>
+                        <outlet property="LogInButton" destination="0mT-Hc-69c" id="U2Q-0o-amc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G5O-H3-IDJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

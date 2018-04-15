@@ -31,6 +31,9 @@
                                     <constraint firstAttribute="height" constant="50" id="7TC-G2-JKo"/>
                                 </constraints>
                                 <state key="normal" title="Cancel"/>
+                                <connections>
+                                    <action selector="CancelButtonTapped:" destination="l72-eo-bpJ" eventType="touchUpInside" id="Ebf-HI-4Et"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fDU-D8-6bP">
                                 <rect key="frame" x="187.5" y="617" width="187.5" height="50"/>
@@ -39,6 +42,7 @@
                                 </constraints>
                                 <state key="normal" title="Log In"/>
                                 <connections>
+                                    <action selector="LoginButtonTapped:" destination="l72-eo-bpJ" eventType="touchUpInside" id="yEY-7Q-Z1r"/>
                                     <segue destination="uox-I1-FVd" kind="presentation" id="pLF-3e-xzr"/>
                                 </connections>
                             </button>
@@ -56,6 +60,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Ut4-5T-Yjm"/>
                     </view>
+                    <connections>
+                        <outlet property="CancelButton" destination="T8B-A6-CDB" id="dXi-1C-pQH"/>
+                        <outlet property="LogInButton" destination="fDU-D8-6bP" id="hta-uN-gcH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IvR-lb-ShA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -90,6 +98,7 @@
                                 </constraints>
                                 <state key="normal" title="Create Account"/>
                                 <connections>
+                                    <action selector="CreateAccountButtonTapped:" destination="Jm4-Dc-2Ys" eventType="touchUpInside" id="eDh-Ac-4Ai"/>
                                     <segue destination="rn8-Jr-tpf" kind="presentation" id="JF6-1k-XVd"/>
                                 </connections>
                             </button>
@@ -99,6 +108,9 @@
                                     <constraint firstAttribute="height" constant="50" id="5H6-Tl-KVv"/>
                                 </constraints>
                                 <state key="normal" title="Cancel"/>
+                                <connections>
+                                    <action selector="CancelButtonTapped:" destination="Jm4-Dc-2Ys" eventType="touchUpInside" id="YLz-9W-UFu"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -114,6 +126,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PoH-be-qmB"/>
                     </view>
+                    <connections>
+                        <outlet property="CancelButton" destination="jRb-Gv-sIn" id="ZfH-EH-WkE"/>
+                        <outlet property="CreateAccountButton" destination="MLO-UA-yGj" id="nxp-Os-n98"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CGo-gq-wJR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

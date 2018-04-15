@@ -10,6 +10,9 @@ import UIKit
 
 class WelcomeViewController: UIViewController {
 
+    @IBOutlet weak var CreateAccountButton: UIButton!
+    @IBOutlet weak var LogInButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,7 +24,12 @@ class WelcomeViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    @IBAction func CreateAccountButtonTapped(_ sender: Any) {
+    }
+    
+    @IBAction func LogInButtonTapped(_ sender: Any) {
+    }
+    
     /*
     // MARK: - Navigation
 

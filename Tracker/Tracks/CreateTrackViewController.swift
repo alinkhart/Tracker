@@ -9,7 +9,10 @@
 import UIKit
 
 class CreateTrackViewController: UIViewController {
-
+    
+    @IBOutlet weak var CancelButton: UIButton!
+    @IBOutlet weak var CreateTrackButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,7 +24,14 @@ class CreateTrackViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    @IBAction func CancelButtonTapped(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
+    
+    @IBAction func CreateTrackButtonTapped(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
+    
     /*
     // MARK: - Navigation
 

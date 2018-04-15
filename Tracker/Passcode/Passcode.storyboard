@@ -31,6 +31,7 @@
                                 </constraints>
                                 <state key="normal" title="Enter Passcode"/>
                                 <connections>
+                                    <action selector="EnterPasscodeButtonTapped:" destination="O7u-uU-jWx" eventType="touchUpInside" id="kBS-Mm-Rei"/>
                                     <segue destination="8gL-Dn-Thp" kind="presentation" id="4BB-el-Aj8"/>
                                 </connections>
                             </button>
@@ -79,6 +80,7 @@
                                 </constraints>
                                 <state key="normal" title="Create Passcode"/>
                                 <connections>
+                                    <action selector="CreatePasscodeButtonTapped:" destination="uM9-dM-Bt4" eventType="touchUpInside" id="a7N-ro-Fd7"/>
                                     <segue destination="8gL-Dn-Thp" kind="presentation" id="7XO-59-nde"/>
                                 </connections>
                             </button>
