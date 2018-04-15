@@ -103,6 +103,11 @@
 		F22F871A2059E06E00004AEE /* Tracker */ = {
 			isa = PBXGroup;
 			children = (
+				F2B0C0DF2083E84000F57CBC /* Passcode */,
+				F2B0C0DE2083E7D600F57CBC /* Login */,
+				F2B0C0DD2083E7C300F57CBC /* Tabs */,
+				F2B0C0DC2083E75C00F57CBC /* Tracks */,
+				F2B0C0DB2083E72E00F57CBC /* Settings */,
 				F2DFD9A52071B0A700868167 /* Config.xcconfig */,
 				F2EECEB620676FC7003CE7F1 /* Tracker.entitlements */,
 				F22F871B2059E06E00004AEE /* AppDelegate.swift */,
@@ -122,6 +127,41 @@
 				F22F87322059E06E00004AEE /* Info.plist */,
 			);
 			path = TrackerTests;
+			sourceTree = "<group>";
+		};
+		F2B0C0DB2083E72E00F57CBC /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		F2B0C0DC2083E75C00F57CBC /* Tracks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tracks;
+			sourceTree = "<group>";
+		};
+		F2B0C0DD2083E7C300F57CBC /* Tabs */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tabs;
+			sourceTree = "<group>";
+		};
+		F2B0C0DE2083E7D600F57CBC /* Login */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		F2B0C0DF2083E84000F57CBC /* Passcode */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Passcode;
 			sourceTree = "<group>";
 		};
 		F8B2A0FCBB26B7A4FBA952ED /* Frameworks */ = {
