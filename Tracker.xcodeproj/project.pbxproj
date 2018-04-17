@@ -10,7 +10,6 @@
 		0B6B21C4FC5799AB4BE19F47 /* Pods_TrackerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0837E451BD2BAF30B870CB84 /* Pods_TrackerTests.framework */; };
 		520D505B954EF02C2CC31E37 /* Pods_Tracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2566A1DB75D0C6AED4419951 /* Pods_Tracker.framework */; };
 		F22F871C2059E06E00004AEE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22F871B2059E06E00004AEE /* AppDelegate.swift */; };
-		F22F871E2059E06E00004AEE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22F871D2059E06E00004AEE /* ViewController.swift */; };
 		F22F87232059E06E00004AEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F22F87222059E06E00004AEE /* Assets.xcassets */; };
 		F22F87262059E06E00004AEE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F22F87242059E06E00004AEE /* LaunchScreen.storyboard */; };
 		F22F87312059E06E00004AEE /* TrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22F87302059E06E00004AEE /* TrackerTests.swift */; };
@@ -53,7 +52,6 @@
 		9347BAA45D47F347E9F6087B /* Pods-TrackerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrackerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TrackerTests/Pods-TrackerTests.release.xcconfig"; sourceTree = "<group>"; };
 		F22F87182059E06E00004AEE /* Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F22F871B2059E06E00004AEE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F22F871D2059E06E00004AEE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F22F87222059E06E00004AEE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F22F87252059E06E00004AEE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F22F87272059E06E00004AEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -77,7 +75,7 @@
 		F2B0C1102083FE7100F57CBC /* CreateTrackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTrackViewController.swift; sourceTree = "<group>"; };
 		F2B0C1122083FE7800F57CBC /* CreatePointViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePointViewController.swift; sourceTree = "<group>"; };
 		F2B0C1142084041000F57CBC /* TrackTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackTableViewCell.swift; sourceTree = "<group>"; };
-		F2DFD9A52071B0A700868167 /* Config.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = SOURCE_ROOT; };
+		F2DFD9A52071B0A700868167 /* Config.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Config.xcconfig; path = Tracker/Configuration/Config.xcconfig; sourceTree = SOURCE_ROOT; };
 		F2EECEB620676FC7003CE7F1 /* Tracker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Tracker.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -135,19 +133,15 @@
 		F22F871A2059E06E00004AEE /* Tracker */ = {
 			isa = PBXGroup;
 			children = (
-				F2B0C1002083F6F000F57CBC /* Welcome */,
-				F2B0C0DF2083E84000F57CBC /* Passcode */,
+				F22F87222059E06E00004AEE /* Assets.xcassets */,
+				F2E0F979208580100017355F /* Configuration */,
+				F2E0F97820857F8F0017355F /* Launch */,
 				F2B0C0DE2083E7D600F57CBC /* Login */,
+				F2B0C0DF2083E84000F57CBC /* Passcode */,
+				F2B0C0DB2083E72E00F57CBC /* Settings */,
 				F2B0C0DD2083E7C300F57CBC /* Tabs */,
 				F2B0C0DC2083E75C00F57CBC /* Tracks */,
-				F2B0C0DB2083E72E00F57CBC /* Settings */,
-				F2DFD9A52071B0A700868167 /* Config.xcconfig */,
-				F2EECEB620676FC7003CE7F1 /* Tracker.entitlements */,
-				F22F871B2059E06E00004AEE /* AppDelegate.swift */,
-				F22F871D2059E06E00004AEE /* ViewController.swift */,
-				F22F87222059E06E00004AEE /* Assets.xcassets */,
-				F22F87242059E06E00004AEE /* LaunchScreen.storyboard */,
-				F22F87272059E06E00004AEE /* Info.plist */,
+				F2B0C1002083F6F000F57CBC /* Welcome */,
 			);
 			path = Tracker;
 			sourceTree = "<group>";
@@ -174,10 +168,10 @@
 			isa = PBXGroup;
 			children = (
 				F2B0C0E82083EEA800F57CBC /* Tracks.storyboard */,
-				F2B0C1102083FE7100F57CBC /* CreateTrackViewController.swift */,
 				F2B0C1122083FE7800F57CBC /* CreatePointViewController.swift */,
-				F2B0C1062083FDEE00F57CBC /* TracksTableViewController.swift */,
+				F2B0C1102083FE7100F57CBC /* CreateTrackViewController.swift */,
 				F2B0C10A2083FE0100F57CBC /* TrackDetailsViewController.swift */,
+				F2B0C1062083FDEE00F57CBC /* TracksTableViewController.swift */,
 				F2B0C1142084041000F57CBC /* TrackTableViewCell.swift */,
 			);
 			path = Tracks;
@@ -218,6 +212,25 @@
 				F2B0C1032083F72A00F57CBC /* WelcomeViewController.swift */,
 			);
 			path = Welcome;
+			sourceTree = "<group>";
+		};
+		F2E0F97820857F8F0017355F /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				F22F871B2059E06E00004AEE /* AppDelegate.swift */,
+				F22F87242059E06E00004AEE /* LaunchScreen.storyboard */,
+			);
+			path = Launch;
+			sourceTree = "<group>";
+		};
+		F2E0F979208580100017355F /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				F2DFD9A52071B0A700868167 /* Config.xcconfig */,
+				F22F87272059E06E00004AEE /* Info.plist */,
+				F2EECEB620676FC7003CE7F1 /* Tracker.entitlements */,
+			);
+			path = Configuration;
 			sourceTree = "<group>";
 		};
 		F8B2A0FCBB26B7A4FBA952ED /* Frameworks */ = {
@@ -460,7 +473,6 @@
 				F2B0C0FD2083F6D400F57CBC /* CreatePasscodeViewController.swift in Sources */,
 				F2B0C0FF2083F6DF00F57CBC /* PasscodeViewController.swift in Sources */,
 				F2B0C1132083FE7800F57CBC /* CreatePointViewController.swift in Sources */,
-				F22F871E2059E06E00004AEE /* ViewController.swift in Sources */,
 				F2B0C1112083FE7100F57CBC /* CreateTrackViewController.swift in Sources */,
 				F22F871C2059E06E00004AEE /* AppDelegate.swift in Sources */,
 				F2B0C10F2083FE2000F57CBC /* SettingsViewController.swift in Sources */,
@@ -546,7 +558,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -598,7 +610,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -611,11 +623,11 @@
 			baseConfigurationReference = 3C7DAACA470D1B527D4E6C5E /* Pods-Tracker.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = Tracker/Tracker.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Tracker/Configuration/Tracker.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2Z7D9THFQV;
-				INFOPLIST_FILE = Tracker/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Tracker/Configuration/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.adamlinkhart.Tracker;
@@ -631,11 +643,11 @@
 			baseConfigurationReference = 4AB4A53B61225117E3E2A6A7 /* Pods-Tracker.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = Tracker/Tracker.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Tracker/Configuration/Tracker.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2Z7D9THFQV;
-				INFOPLIST_FILE = Tracker/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Tracker/Configuration/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.adamlinkhart.Tracker;
