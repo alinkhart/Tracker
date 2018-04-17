@@ -10,14 +10,32 @@ import UIKit
 import AppCenter
 import AppCenterPush
 
+class AppCoordinator {
+    let rootViewController: UIViewController
+    
+    init(rootViewController: UIViewController) {
+        self.rootViewController = rootViewController
+    }
+}
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    var coordinator: AppCoordinator?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        let welcomeStoryboard = UIStoryboard(name: "Welcome", bundle: nil)
+        let welcomeViewController = welcomeStoryboard.instantiateViewController(withIdentifier: "WelcomeViewController")
+        
+        window = UIWindow()
+        window?.rootViewController = welcomeViewController
+        
+        coordinator = AppCoordinator(rootViewController: welcomeViewController)
+        
+        window?.makeKeyAndVisible()
     
         if let appCenterSecret = Bundle.main.infoDictionary?["APP_CENTER_SECRET"] as? String {
             MSAppCenter.start(appCenterSecret, withServices: [MSPush.self])
