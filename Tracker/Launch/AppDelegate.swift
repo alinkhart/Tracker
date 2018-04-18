@@ -27,8 +27,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
-        let welcomeStoryboard = UIStoryboard(name: "Welcome", bundle: nil)
-        let welcomeViewController = welcomeStoryboard.instantiateViewController(withIdentifier: "WelcomeViewController")
+        let welcomeViewController = WelcomeViewController.makeFromStoryboard()
         
         window = UIWindow()
         window?.rootViewController = welcomeViewController

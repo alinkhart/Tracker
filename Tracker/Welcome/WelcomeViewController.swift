@@ -8,7 +8,7 @@
 
 import UIKit
 
-class WelcomeViewController: UIViewController {
+final class WelcomeViewController: UIViewController, WelcomeStoryboardInitializable {
 
     @IBOutlet weak var CreateAccountButton: UIButton!
     @IBOutlet weak var LogInButton: UIButton!

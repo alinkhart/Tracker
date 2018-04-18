@@ -13,6 +13,7 @@
 		F22F87232059E06E00004AEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F22F87222059E06E00004AEE /* Assets.xcassets */; };
 		F22F87262059E06E00004AEE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F22F87242059E06E00004AEE /* LaunchScreen.storyboard */; };
 		F22F87312059E06E00004AEE /* TrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22F87302059E06E00004AEE /* TrackerTests.swift */; };
+		F230EB5B2087648F00EF61BE /* WelcomeStoryboardInitializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F230EB5A2087648F00EF61BE /* WelcomeStoryboardInitializable.swift */; };
 		F2B0C0E32083EE5100F57CBC /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2B0C0E22083EE5100F57CBC /* Login.storyboard */; };
 		F2B0C0E52083EE5D00F57CBC /* Passcode.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2B0C0E42083EE5D00F57CBC /* Passcode.storyboard */; };
 		F2B0C0E72083EE6800F57CBC /* Tabs.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2B0C0E62083EE6800F57CBC /* Tabs.storyboard */; };
@@ -58,6 +59,7 @@
 		F22F872C2059E06E00004AEE /* TrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F22F87302059E06E00004AEE /* TrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackerTests.swift; sourceTree = "<group>"; };
 		F22F87322059E06E00004AEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F230EB5A2087648F00EF61BE /* WelcomeStoryboardInitializable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeStoryboardInitializable.swift; sourceTree = "<group>"; };
 		F2B0C0E22083EE5100F57CBC /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		F2B0C0E42083EE5D00F57CBC /* Passcode.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Passcode.storyboard; sourceTree = "<group>"; };
 		F2B0C0E62083EE6800F57CBC /* Tabs.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Tabs.storyboard; sourceTree = "<group>"; };
@@ -210,6 +212,7 @@
 			children = (
 				F2B0C1012083F71700F57CBC /* Welcome.storyboard */,
 				F2B0C1032083F72A00F57CBC /* WelcomeViewController.swift */,
+				F230EB5A2087648F00EF61BE /* WelcomeStoryboardInitializable.swift */,
 			);
 			path = Welcome;
 			sourceTree = "<group>";
@@ -217,8 +220,8 @@
 		F2E0F97820857F8F0017355F /* Launch */ = {
 			isa = PBXGroup;
 			children = (
-				F22F871B2059E06E00004AEE /* AppDelegate.swift */,
 				F22F87242059E06E00004AEE /* LaunchScreen.storyboard */,
+				F22F871B2059E06E00004AEE /* AppDelegate.swift */,
 			);
 			path = Launch;
 			sourceTree = "<group>";
@@ -466,6 +469,7 @@
 			files = (
 				F2B0C0FB2083F68900F57CBC /* LoginViewController.swift in Sources */,
 				F2B0C1072083FDEE00F57CBC /* TracksTableViewController.swift in Sources */,
+				F230EB5B2087648F00EF61BE /* WelcomeStoryboardInitializable.swift in Sources */,
 				F2B0C10B2083FE0100F57CBC /* TrackDetailsViewController.swift in Sources */,
 				F2B0C1042083F72A00F57CBC /* WelcomeViewController.swift in Sources */,
 				F2B0C0F52083F59600F57CBC /* CreateAccountViewController.swift in Sources */,
