@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CreateTrackViewController: UIViewController {
+final class CreateTrackViewController: UIViewController, TracksStoryboardInitializable {
     
     @IBOutlet weak var CancelButton: UIButton!
     @IBOutlet weak var CreateTrackButton: UIButton!

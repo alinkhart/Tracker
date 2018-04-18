@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SettingsViewController: UIViewController {
+final class SettingsViewController: UIViewController, SettingsStoryboardInitializable {
 
     override func viewDidLoad() {
         super.viewDidLoad()

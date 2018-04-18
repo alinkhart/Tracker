@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PasscodeViewController: UIViewController {
+final class PasscodeViewController: UIViewController, PasscodeStoryboardInitializable {
 
     override func viewDidLoad() {
         super.viewDidLoad()

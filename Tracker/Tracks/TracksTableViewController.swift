@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TracksTableViewController: UITableViewController {
+final class TracksTableViewController: UITableViewController, TracksStoryboardInitializable {
 
     override func viewDidLoad() {
         super.viewDidLoad()
