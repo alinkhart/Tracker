@@ -14,6 +14,7 @@
 		F22F87262059E06E00004AEE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F22F87242059E06E00004AEE /* LaunchScreen.storyboard */; };
 		F22F87312059E06E00004AEE /* TrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22F87302059E06E00004AEE /* TrackerTests.swift */; };
 		F230EB5B2087648F00EF61BE /* WelcomeStoryboardInitializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F230EB5A2087648F00EF61BE /* WelcomeStoryboardInitializable.swift */; };
+		F230EB5D2087684D00EF61BE /* TracksStoryboardInitializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F230EB5C2087684D00EF61BE /* TracksStoryboardInitializable.swift */; };
 		F2B0C0E32083EE5100F57CBC /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2B0C0E22083EE5100F57CBC /* Login.storyboard */; };
 		F2B0C0E52083EE5D00F57CBC /* Passcode.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2B0C0E42083EE5D00F57CBC /* Passcode.storyboard */; };
 		F2B0C0E72083EE6800F57CBC /* Tabs.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2B0C0E62083EE6800F57CBC /* Tabs.storyboard */; };
@@ -60,6 +61,7 @@
 		F22F87302059E06E00004AEE /* TrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackerTests.swift; sourceTree = "<group>"; };
 		F22F87322059E06E00004AEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F230EB5A2087648F00EF61BE /* WelcomeStoryboardInitializable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeStoryboardInitializable.swift; sourceTree = "<group>"; };
+		F230EB5C2087684D00EF61BE /* TracksStoryboardInitializable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TracksStoryboardInitializable.swift; sourceTree = "<group>"; };
 		F2B0C0E22083EE5100F57CBC /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		F2B0C0E42083EE5D00F57CBC /* Passcode.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Passcode.storyboard; sourceTree = "<group>"; };
 		F2B0C0E62083EE6800F57CBC /* Tabs.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Tabs.storyboard; sourceTree = "<group>"; };
@@ -175,6 +177,7 @@
 				F2B0C10A2083FE0100F57CBC /* TrackDetailsViewController.swift */,
 				F2B0C1062083FDEE00F57CBC /* TracksTableViewController.swift */,
 				F2B0C1142084041000F57CBC /* TrackTableViewCell.swift */,
+				F230EB5C2087684D00EF61BE /* TracksStoryboardInitializable.swift */,
 			);
 			path = Tracks;
 			sourceTree = "<group>";
@@ -479,6 +482,7 @@
 				F2B0C1132083FE7800F57CBC /* CreatePointViewController.swift in Sources */,
 				F2B0C1112083FE7100F57CBC /* CreateTrackViewController.swift in Sources */,
 				F22F871C2059E06E00004AEE /* AppDelegate.swift in Sources */,
+				F230EB5D2087684D00EF61BE /* TracksStoryboardInitializable.swift in Sources */,
 				F2B0C10F2083FE2000F57CBC /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
