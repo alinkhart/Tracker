@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LoginViewController: UIViewController {
+final class LoginViewController: UIViewController, LoginStoryboardInitializable {
 
     @IBOutlet weak var CancelButton: UIButton!
     @IBOutlet weak var LogInButton: UIButton!

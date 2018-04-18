@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CreateAccountViewController: UIViewController {
+final class CreateAccountViewController: UIViewController, LoginStoryboardInitializable {
 
     @IBOutlet weak var CancelButton: UIButton!
     @IBOutlet weak var CreateAccountButton: UIButton!
