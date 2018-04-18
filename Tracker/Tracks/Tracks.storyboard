@@ -43,7 +43,7 @@
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="TrackTitleLabel" destination="jwB-qy-qDP" id="GbL-zO-8hI"/>
-                                    <segue destination="4En-N5-ABs" kind="show" id="ccJ-ZB-jek"/>
+                                    <segue destination="4En-N5-ABs" kind="show" id="WjS-aE-FrK"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -122,7 +122,7 @@
             </objects>
             <point key="canvasLocation" x="2164" y="-132"/>
         </scene>
-        <!--Track Details View Controller-->
+        <!--Track Details-->
         <scene sceneID="2AL-Kc-wFu">
             <objects>
                 <viewController storyboardIdentifier="TrackDetailsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="4En-N5-ABs" customClass="TrackDetailsViewController" customModule="Tracker" customModuleProvider="target" sceneMemberID="viewController">
@@ -144,6 +144,14 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="fFd-Xb-Byx"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Track Details" id="9iR-2i-iVQ">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="pVh-Ap-gch">
+                            <connections>
+                                <action selector="CreatePointButtonTapped:" destination="4En-N5-ABs" id="bko-OV-qMI"/>
+                                <segue destination="GQe-ay-QTJ" kind="presentation" id="LYf-b8-GTk"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="S2E-2s-CqE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
