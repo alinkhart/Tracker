@@ -43,7 +43,6 @@
                                 <state key="normal" title="Log In"/>
                                 <connections>
                                     <action selector="LoginButtonTapped:" destination="l72-eo-bpJ" eventType="touchUpInside" id="yEY-7Q-Z1r"/>
-                                    <segue destination="uox-I1-FVd" kind="presentation" id="pLF-3e-xzr"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -69,14 +68,6 @@
             </objects>
             <point key="canvasLocation" x="1098" y="-98"/>
         </scene>
-        <!--PasscodeViewController-->
-        <scene sceneID="Ils-VZ-MjQ">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Passcode" referencedIdentifier="PasscodeViewController" id="uox-I1-FVd" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="6D7-Xm-o0A" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1697" y="-99"/>
-        </scene>
         <!--Create Account View Controller-->
         <scene sceneID="HLR-s0-fdo">
             <objects>
@@ -99,7 +90,6 @@
                                 <state key="normal" title="Create Account"/>
                                 <connections>
                                     <action selector="CreateAccountButtonTapped:" destination="Jm4-Dc-2Ys" eventType="touchUpInside" id="eDh-Ac-4Ai"/>
-                                    <segue destination="rn8-Jr-tpf" kind="presentation" id="JF6-1k-XVd"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jRb-Gv-sIn">
@@ -134,14 +124,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CGo-gq-wJR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1098" y="602"/>
-        </scene>
-        <!--CreatePasscodeViewController-->
-        <scene sceneID="9mF-5Z-IYg">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Passcode" referencedIdentifier="CreatePasscodeViewController" id="rn8-Jr-tpf" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4Ux-vR-8Rr" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1697" y="601"/>
         </scene>
     </scenes>
 </document>

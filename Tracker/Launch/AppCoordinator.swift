@@ -8,25 +8,35 @@
 
 import UIKit
 
-class AppCoordinator: WelcomeViewControllerDelegate {
+class AppCoordinator: WelcomeViewControllerDelegate, CreateAccountViewControllerDelegate {
     
-    let welcomeViewController = WelcomeViewController.makeFromStoryboard()
-    let createAccountViewController = CreateAccountViewController.makeFromStoryboard()
-    let loginViewController = LoginViewController.makeFromStoryboard()
+    private let welcomeViewController = WelcomeViewController.makeFromStoryboard()
+    private let createAccountViewController = CreateAccountViewController.makeFromStoryboard()
+    private let loginViewController = LoginViewController.makeFromStoryboard()
+    private let createPasscodeViewController = CreatePasscodeViewController.makeFromStoryboard()
     
     init() {
         welcomeViewController.delegate = self
+        createAccountViewController.delegate = self
     }
     
     func start() -> UIViewController {
         return welcomeViewController
     }
     
-    func didSelectCreateAccount() {
+    func didSelectShowCreateAccount() {
         welcomeViewController.present(createAccountViewController, animated: true, completion: nil)
     }
     
-    func didSelectLogin() {
+    func didSelectShowLogin() {
         welcomeViewController.present(loginViewController, animated: true, completion: nil)
+    }
+    
+    func didSelectCancelCreateAccount(_ createAccountViewController: CreateAccountViewController) {
+        createAccountViewController.dismiss(animated: true, completion: nil)
+    }
+    
+    func didSelectCreateAccount() {
+        createAccountViewController.present(createPasscodeViewController, animated: true, completion: nil)
     }
 }

@@ -8,10 +8,17 @@
 
 import UIKit
 
+protocol CreateAccountViewControllerDelegate: class {
+    func didSelectCancelCreateAccount(_ createAccountViewController: CreateAccountViewController)
+    func didSelectCreateAccount()
+}
+
 final class CreateAccountViewController: UIViewController, LoginStoryboardInitializable {
 
     @IBOutlet weak var CancelButton: UIButton!
     @IBOutlet weak var CreateAccountButton: UIButton!
+    
+    weak var delegate: CreateAccountViewControllerDelegate?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,20 +32,10 @@ final class CreateAccountViewController: UIViewController, LoginStoryboardInitia
     }
     
     @IBAction func CancelButtonTapped(_ sender: Any) {
-        dismiss(animated: true, completion: nil)
+        delegate?.didSelectCancelCreateAccount(self)
     }
     
     @IBAction func CreateAccountButtonTapped(_ sender: Any) {
+        delegate?.didSelectCreateAccount()
     }
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
