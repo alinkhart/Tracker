@@ -32,7 +32,6 @@
                                 <state key="normal" title="Enter Passcode"/>
                                 <connections>
                                     <action selector="EnterPasscodeButtonTapped:" destination="O7u-uU-jWx" eventType="touchUpInside" id="kBS-Mm-Rei"/>
-                                    <segue destination="8gL-Dn-Thp" kind="presentation" id="4BB-el-Aj8"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -50,14 +49,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2kz-OX-aQC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2009" y="-99"/>
-        </scene>
-        <!--Tabs-->
-        <scene sceneID="UGI-7k-wPh">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Tabs" id="8gL-Dn-Thp" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="BcM-JY-pio" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2855" y="188"/>
         </scene>
         <!--Create Passcode View Controller-->
         <scene sceneID="aIp-Oj-UxY">
@@ -81,7 +72,6 @@
                                 <state key="normal" title="Create Passcode"/>
                                 <connections>
                                     <action selector="CreatePasscodeButtonTapped:" destination="uM9-dM-Bt4" eventType="touchUpInside" id="a7N-ro-Fd7"/>
-                                    <segue destination="8gL-Dn-Thp" kind="presentation" id="7XO-59-nde"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -101,7 +91,4 @@
             <point key="canvasLocation" x="2009" y="603"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="7XO-59-nde"/>
-    </inferredMetricsTieBreakers>
 </document>

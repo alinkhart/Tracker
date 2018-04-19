@@ -12,7 +12,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="6jP-Lz-r37">
             <objects>
-                <tabBarController storyboardIdentifier="RootTabViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="QSx-Bn-wUp" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="RootTabBarController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="QSx-Bn-wUp" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Ur6-ji-l3F">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
