@@ -33,7 +33,6 @@
                                 <state key="normal" title="Create Account"/>
                                 <connections>
                                     <action selector="CreateAccountButtonTapped:" destination="nYh-az-hPa" eventType="touchUpInside" id="jlw-Zl-Ipj"/>
-                                    <segue destination="iDv-4b-dNt" kind="presentation" id="iBI-3z-dqA"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0mT-Hc-69c">
@@ -44,7 +43,6 @@
                                 <state key="normal" title="Log In"/>
                                 <connections>
                                     <action selector="LogInButtonTapped:" destination="nYh-az-hPa" eventType="touchUpInside" id="R7u-gv-voV"/>
-                                    <segue destination="IPb-zx-6ZC" kind="presentation" id="Qgu-7i-xtc"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -69,22 +67,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G5O-H3-IDJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="185" y="251"/>
-        </scene>
-        <!--CreateAccountViewController-->
-        <scene sceneID="Om1-iz-6eg">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Login" referencedIdentifier="CreateAccountViewController" id="iDv-4b-dNt" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="aWx-32-ngU" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="17" y="706"/>
-        </scene>
-        <!--LoginViewController-->
-        <scene sceneID="pCB-8c-lKo">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Login" referencedIdentifier="LoginViewController" id="IPb-zx-6ZC" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="2uF-iI-1XG" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="353" y="706"/>
         </scene>
     </scenes>
 </document>

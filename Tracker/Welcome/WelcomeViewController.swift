@@ -8,10 +8,17 @@
 
 import UIKit
 
+protocol WelcomeViewControllerDelegate : class {
+    func didSelectCreateAccount()
+    func didSelectLogin()
+}
+
 final class WelcomeViewController: UIViewController, WelcomeStoryboardInitializable {
 
     @IBOutlet weak var CreateAccountButton: UIButton!
     @IBOutlet weak var LogInButton: UIButton!
+    
+    weak var delegate: WelcomeViewControllerDelegate?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,9 +32,11 @@ final class WelcomeViewController: UIViewController, WelcomeStoryboardInitializa
     }
     
     @IBAction func CreateAccountButtonTapped(_ sender: Any) {
+        delegate?.didSelectCreateAccount()
     }
     
     @IBAction func LogInButtonTapped(_ sender: Any) {
+        delegate?.didSelectLogin()
     }
     
     /*

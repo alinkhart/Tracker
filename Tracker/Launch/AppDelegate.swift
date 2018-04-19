@@ -10,14 +10,6 @@ import UIKit
 import AppCenter
 import AppCenterPush
 
-class AppCoordinator {
-    let rootViewController: UIViewController
-    
-    init(rootViewController: UIViewController) {
-        self.rootViewController = rootViewController
-    }
-}
-
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -27,12 +19,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
-        let welcomeViewController = WelcomeViewController.makeFromStoryboard()
+        coordinator = AppCoordinator()
+        let rootViewController = coordinator?.start()
         
         window = UIWindow()
-        window?.rootViewController = welcomeViewController
-        
-        coordinator = AppCoordinator(rootViewController: welcomeViewController)
+        window?.rootViewController = rootViewController
         
         window?.makeKeyAndVisible()
     

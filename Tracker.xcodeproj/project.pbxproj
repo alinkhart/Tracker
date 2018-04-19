@@ -18,6 +18,7 @@
 		F230EB5F2087694300EF61BE /* SettingsStoryboardInitializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F230EB5E2087694300EF61BE /* SettingsStoryboardInitializable.swift */; };
 		F230EB61208769AA00EF61BE /* PasscodeStoryboardInitializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F230EB60208769AA00EF61BE /* PasscodeStoryboardInitializable.swift */; };
 		F230EB6320876A8C00EF61BE /* LoginStoryboardInitializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F230EB6220876A8C00EF61BE /* LoginStoryboardInitializable.swift */; };
+		F279D861208829E600852F0D /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F279D860208829E600852F0D /* AppCoordinator.swift */; };
 		F2B0C0E32083EE5100F57CBC /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2B0C0E22083EE5100F57CBC /* Login.storyboard */; };
 		F2B0C0E52083EE5D00F57CBC /* Passcode.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2B0C0E42083EE5D00F57CBC /* Passcode.storyboard */; };
 		F2B0C0E72083EE6800F57CBC /* Tabs.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2B0C0E62083EE6800F57CBC /* Tabs.storyboard */; };
@@ -68,6 +69,7 @@
 		F230EB5E2087694300EF61BE /* SettingsStoryboardInitializable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsStoryboardInitializable.swift; sourceTree = "<group>"; };
 		F230EB60208769AA00EF61BE /* PasscodeStoryboardInitializable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasscodeStoryboardInitializable.swift; sourceTree = "<group>"; };
 		F230EB6220876A8C00EF61BE /* LoginStoryboardInitializable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginStoryboardInitializable.swift; sourceTree = "<group>"; };
+		F279D860208829E600852F0D /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		F2B0C0E22083EE5100F57CBC /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		F2B0C0E42083EE5D00F57CBC /* Passcode.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Passcode.storyboard; sourceTree = "<group>"; };
 		F2B0C0E62083EE6800F57CBC /* Tabs.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Tabs.storyboard; sourceTree = "<group>"; };
@@ -234,6 +236,7 @@
 			children = (
 				F22F87242059E06E00004AEE /* LaunchScreen.storyboard */,
 				F22F871B2059E06E00004AEE /* AppDelegate.swift */,
+				F279D860208829E600852F0D /* AppCoordinator.swift */,
 			);
 			path = Launch;
 			sourceTree = "<group>";
@@ -485,6 +488,7 @@
 				F2B0C10B2083FE0100F57CBC /* TrackDetailsViewController.swift in Sources */,
 				F2B0C1042083F72A00F57CBC /* WelcomeViewController.swift in Sources */,
 				F230EB5F2087694300EF61BE /* SettingsStoryboardInitializable.swift in Sources */,
+				F279D861208829E600852F0D /* AppCoordinator.swift in Sources */,
 				F2B0C0F52083F59600F57CBC /* CreateAccountViewController.swift in Sources */,
 				F2B0C1152084041100F57CBC /* TrackTableViewCell.swift in Sources */,
 				F2B0C0FD2083F6D400F57CBC /* CreatePasscodeViewController.swift in Sources */,
