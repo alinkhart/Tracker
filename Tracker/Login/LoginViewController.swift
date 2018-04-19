@@ -8,37 +8,27 @@
 
 import UIKit
 
+protocol LoginViewControllerDelegate: class {
+    func didSelectCancelLogin(_ loginViewController: LoginViewController)
+    func didSelectLogin()
+}
+
 final class LoginViewController: UIViewController, LoginStoryboardInitializable {
 
     @IBOutlet weak var CancelButton: UIButton!
     @IBOutlet weak var LogInButton: UIButton!
     
+    weak var delegate: LoginViewControllerDelegate?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     @IBAction func CancelButtonTapped(_ sender: Any) {
-        dismiss(animated: true, completion: nil)
+        delegate?.didSelectCancelLogin(self)
     }
     
     @IBAction func LoginButtonTapped(_ sender: Any) {
+        delegate?.didSelectLogin()
     }
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
