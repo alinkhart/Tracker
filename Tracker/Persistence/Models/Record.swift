@@ -12,6 +12,6 @@ import RealmSwift
 class Record: Object {
     @objc dynamic var entry = ""
     @objc dynamic var createdDate = Date(timeIntervalSinceNow: 0)
-    @objc dynamic var deletedDate = Date(timeIntervalSinceNow: 0)
-    @objc dynamic var lastModifiedDate = Date(timeIntervalSinceNow: 0)
+    @objc dynamic var deletedDate: Date? = nil
+    @objc dynamic var lastModifiedDate: Date? = nil
 }
