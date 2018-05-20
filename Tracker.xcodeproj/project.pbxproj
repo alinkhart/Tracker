@@ -19,6 +19,7 @@
 		F230EB61208769AA00EF61BE /* PasscodeStoryboardInitializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F230EB60208769AA00EF61BE /* PasscodeStoryboardInitializable.swift */; };
 		F230EB6320876A8C00EF61BE /* LoginStoryboardInitializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F230EB6220876A8C00EF61BE /* LoginStoryboardInitializable.swift */; };
 		F279D861208829E600852F0D /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F279D860208829E600852F0D /* AppCoordinator.swift */; };
+		F28E470220B218A700E7836C /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28E470120B218A700E7836C /* Track.swift */; };
 		F2B0C0E32083EE5100F57CBC /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2B0C0E22083EE5100F57CBC /* Login.storyboard */; };
 		F2B0C0E52083EE5D00F57CBC /* Passcode.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2B0C0E42083EE5D00F57CBC /* Passcode.storyboard */; };
 		F2B0C0E72083EE6800F57CBC /* Tabs.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2B0C0E62083EE6800F57CBC /* Tabs.storyboard */; };
@@ -70,6 +71,7 @@
 		F230EB60208769AA00EF61BE /* PasscodeStoryboardInitializable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasscodeStoryboardInitializable.swift; sourceTree = "<group>"; };
 		F230EB6220876A8C00EF61BE /* LoginStoryboardInitializable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginStoryboardInitializable.swift; sourceTree = "<group>"; };
 		F279D860208829E600852F0D /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		F28E470120B218A700E7836C /* Track.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
 		F2B0C0E22083EE5100F57CBC /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		F2B0C0E42083EE5D00F57CBC /* Passcode.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Passcode.storyboard; sourceTree = "<group>"; };
 		F2B0C0E62083EE6800F57CBC /* Tabs.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Tabs.storyboard; sourceTree = "<group>"; };
@@ -145,12 +147,12 @@
 		F22F871A2059E06E00004AEE /* Tracker */ = {
 			isa = PBXGroup;
 			children = (
-				F28E46FF20B2161F00E7836C /* Persistence */,
 				F22F87222059E06E00004AEE /* Assets.xcassets */,
 				F2E0F979208580100017355F /* Configuration */,
 				F2E0F97820857F8F0017355F /* Launch */,
 				F2B0C0DE2083E7D600F57CBC /* Login */,
 				F2B0C0DF2083E84000F57CBC /* Passcode */,
+				F28E46FF20B2161F00E7836C /* Persistence */,
 				F2B0C0DB2083E72E00F57CBC /* Settings */,
 				F2B0C0DD2083E7C300F57CBC /* Tabs */,
 				F2B0C0DC2083E75C00F57CBC /* Tracks */,
@@ -171,8 +173,17 @@
 		F28E46FF20B2161F00E7836C /* Persistence */ = {
 			isa = PBXGroup;
 			children = (
+				F28E470020B2178300E7836C /* Models */,
 			);
 			path = Persistence;
+			sourceTree = "<group>";
+		};
+		F28E470020B2178300E7836C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F28E470120B218A700E7836C /* Track.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		F2B0C0DB2083E72E00F57CBC /* Settings */ = {
@@ -499,6 +510,7 @@
 				F2B0C1072083FDEE00F57CBC /* TracksTableViewController.swift in Sources */,
 				F230EB5B2087648F00EF61BE /* WelcomeStoryboardInitializable.swift in Sources */,
 				F2B0C10B2083FE0100F57CBC /* TrackDetailsViewController.swift in Sources */,
+				F28E470220B218A700E7836C /* Track.swift in Sources */,
 				F2B0C1042083F72A00F57CBC /* WelcomeViewController.swift in Sources */,
 				F230EB5F2087694300EF61BE /* SettingsStoryboardInitializable.swift in Sources */,
 				F279D861208829E600852F0D /* AppCoordinator.swift in Sources */,
