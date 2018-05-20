@@ -14,4 +14,6 @@ class Track: Object {
     @objc dynamic var createdDate = Date(timeIntervalSinceNow: 0)
     @objc dynamic var lastModifiedDate: Date? = nil
     @objc dynamic var deletedDate: Date? = nil
+    
+    let records = List<Record>()
 }
