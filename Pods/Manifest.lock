@@ -9,14 +9,22 @@ PODS:
     - AppCenter/Core
   - AppCenter/Push (1.5.0):
     - AppCenter/Core
+  - Realm (3.5.0):
+    - Realm/Headers (= 3.5.0)
+  - Realm/Headers (3.5.0)
+  - RealmSwift (3.5.0):
+    - Realm (= 3.5.0)
 
 DEPENDENCIES:
   - AppCenter (~> 1.5.0)
   - AppCenter/Push (~> 1.5.0)
+  - RealmSwift (~> 3.5.0)
 
 SPEC CHECKSUMS:
   AppCenter: 42c293f0de27e173aacd600a55a49da5317cd40e
+  Realm: 0378021c424e4e2bd6a0e63b27881e929d9b9ad1
+  RealmSwift: 3322562622fda2ad596985ead4d8d8be30cf838c
 
-PODFILE CHECKSUM: 3e4d4e360df88166d905609bc54cfae34835ecaf
+PODFILE CHECKSUM: c2e43df29ac591f865f86e576b31059f9ef4bcf0
 
 COCOAPODS: 1.4.0

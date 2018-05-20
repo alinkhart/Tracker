@@ -145,6 +145,7 @@
 		F22F871A2059E06E00004AEE /* Tracker */ = {
 			isa = PBXGroup;
 			children = (
+				F28E46FF20B2161F00E7836C /* Persistence */,
 				F22F87222059E06E00004AEE /* Assets.xcassets */,
 				F2E0F979208580100017355F /* Configuration */,
 				F2E0F97820857F8F0017355F /* Launch */,
@@ -165,6 +166,13 @@
 				F22F87322059E06E00004AEE /* Info.plist */,
 			);
 			path = TrackerTests;
+			sourceTree = "<group>";
+		};
+		F28E46FF20B2161F00E7836C /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Persistence;
 			sourceTree = "<group>";
 		};
 		F2B0C0DB2083E72E00F57CBC /* Settings */ = {
@@ -466,9 +474,14 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Tracker/Pods-Tracker-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
